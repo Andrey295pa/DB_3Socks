@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:sqlite:D:/Install/SQLite/Socks.db</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <mapping class="Entyty.ManufactureEntity"/>
+        <mapping resource="ManufactureEntity.hbm.xml"/>
+        <mapping class="Entyty.MaterialEntity"/>
+        <mapping resource="MaterialEntity.hbm.xml"/>
+        <mapping class="Entyty.SocksEntity"/>
+        <mapping resource="SocksEntity.hbm.xml"/>
+        <mapping class="Entyty.SocksMaterialEntity"/>
+        <mapping resource="SocksMaterialEntity.hbm.xml"/>
+        <mapping resource="TypeEntity.hbm.xml"/>
+        <mapping class="Entyty.TypeEntity"/>
+        <mapping resource="SqliteMasterEntity.hbm.xml"/>
+        <mapping class="Entyty.SqliteMasterEntity"/>
+        <mapping resource="SqliteSequenceEntity.hbm.xml"/>
+        <mapping class="Entyty.SqliteSequenceEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
