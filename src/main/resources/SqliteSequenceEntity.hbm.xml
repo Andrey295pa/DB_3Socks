@@ -5,6 +5,7 @@
 <hibernate-mapping>
 
     <class name="Entyty.SqliteSequenceEntity" table="sqlite_sequence" schema="main">
+        <id name="id"/>
         <property name="name" column="name"/>
         <property name="seq" column="seq"/>
     </class>

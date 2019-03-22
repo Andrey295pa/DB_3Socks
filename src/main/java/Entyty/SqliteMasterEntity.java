@@ -89,4 +89,15 @@ public class SqliteMasterEntity {
         result = 31 * result + (sql != null ? sql.hashCode() : 0);
         return result;
     }
+
+    private String id;
+
+    @javax.persistence.Id
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 }

@@ -1,9 +1,6 @@
 package Entyty;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "sqlite_sequence", schema = "main", catalog = "")
@@ -49,5 +46,16 @@ public class SqliteSequenceEntity {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + (seq != null ? seq.hashCode() : 0);
         return result;
+    }
+
+    private String id;
+
+    @Id
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

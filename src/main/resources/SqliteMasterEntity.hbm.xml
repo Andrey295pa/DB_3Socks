@@ -5,6 +5,7 @@
 <hibernate-mapping>
 
     <class name="Entyty.SqliteMasterEntity" table="sqlite_master" schema="main">
+        <id name="id"/>
         <property name="type" column="type"/>
         <property name="name" column="name"/>
         <property name="tblName" column="tbl_name"/>
